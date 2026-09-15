@@ -66,7 +66,7 @@ test_001_schema_valid() {
     XML_CATALOG_FILES=./catalog.xml xmllint --schema XMLSchema.xsd ../schema/sounds.xsd --noout || return $?
 }
 
-test_002_suite_syntax() {
+test_002_syntax() {
     #
     # Verify that all MusicXML files in the test suite are syntactically correct.
     #
@@ -88,7 +88,7 @@ test_002_suite_syntax() {
     done
 }
 
-test_003_suite_schematron() {
+test_003_schematron() {
     #
     # Verify that all MusicXML files in the test suite pass the semantic validations.
     #
