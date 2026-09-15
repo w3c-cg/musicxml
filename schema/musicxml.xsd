@@ -5154,6 +5154,21 @@ The &lt;multiple-rest&gt; and &lt;measure-repeat&gt; elements indicate the numbe
 				</xs:annotation>
 			</xs:element>
 
+			<xs:element name="voice-orientations" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The &lt;voice-orientations&gt; element contains a number of &lt;voice-orientation&gt; elements which distinguish between upper and lower voices on a staff.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="voice-orientation" type="voice-orientation" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>The &lt;voice-orientation&gt; element distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each &lt;voice-orientation&gt; element associates an orientation (up/down) with a voice/staff combination. Staff can be omitted for single-staff parts. If no &lt;voice-orientation&gt; element is present for a voice, its orientation is unspecified and application-dependent.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
 		</xs:sequence>
 	</xs:complexType>
 
@@ -5660,6 +5675,26 @@ The print-object attribute allows a time signature to be specified but not print
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attributeGroup ref="optional-unique-id"/>
+	</xs:complexType>
+
+	<xs:complexType name="voice-orientation">
+		<xs:annotation>
+			<xs:documentation>The voice-orientation type distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each voice-orientation element associates an orientation (up/down) with a voice/staff combination. Staff can be omitted for single-staff parts. If no voice-orientation element is present for a voice, its orientation is unspecified and application-dependent.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="up-down">
+				<xs:attribute name="voice" type="xs:string" use="required">
+					<xs:annotation>
+						<xs:documentation>Refers to the voice to which this orientation applies. It is a required value.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+				<xs:attribute name="staff" type="staff-number">
+					<xs:annotation>
+						<xs:documentation>Refers to the staff number to which this orientation applies. A value of 1 is assumed if not present.</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
 	</xs:complexType>
 
 	<!-- Complex types derived from barline.mod elements -->

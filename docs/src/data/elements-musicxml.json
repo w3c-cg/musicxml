@@ -2878,6 +2878,44 @@
       "name": "key-step",
       "documentation": "Non-traditional key signatures are represented using a list of altered tones. The <key-step> element indicates the pitch step to be altered, represented using the same names as in the <step> element. The different element names indicate the different meaning of altering notes in a scale versus altering a sounding pitch."
    },
+   "voice-orientations": {
+      "children": {
+         "type": "element",
+         "value": "voice-orientation",
+         "min": "0",
+         "max": "unbounded"
+      },
+      "parents": [
+         "attributes"
+      ],
+      "name": "voice-orientations",
+      "documentation": "The <voice-orientations> element contains a number of <voice-orientation> elements which distinguish between upper and lower voices on a staff."
+   },
+   "voice-orientation": {
+      "children": {
+         "type": "type",
+         "value": "up-down"
+      },
+      "parents": [
+         "voice-orientations"
+      ],
+      "attributes": [
+         {
+            "required": true,
+            "name": "voice",
+            "documentation": "Refers to the voice to which this orientation applies. It is a required value.",
+            "type": "xs:string"
+         },
+         {
+            "required": false,
+            "name": "staff",
+            "documentation": "Refers to the staff number to which this orientation applies. A value of 1 is assumed if not present.",
+            "type": "staff-number"
+         }
+      ],
+      "name": "voice-orientation",
+      "documentation": "The <voice-orientation> element distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each <voice-orientation> element associates an orientation (up\/down) with a voice\/staff combination. Staff can be omitted for single-staff parts. If no <voice-orientation> element is present for a voice, its orientation is unspecified and application-dependent."
+   },
    "mordent": {
       "children": null,
       "parents": [
@@ -9145,6 +9183,12 @@
                "value": "measure-style",
                "min": "0",
                "max": "unbounded"
+            },
+            {
+               "type": "element",
+               "value": "voice-orientations",
+               "min": "0",
+               "max": "1"
             }
          ],
          "min": "1",

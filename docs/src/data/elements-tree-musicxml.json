@@ -528,6 +528,11 @@
                      }
                   }
                },
+               "voice-orientations": {
+                  "voice-orientation": {
+                     
+                  }
+               },
                "part-symbol": {
                   
                },
@@ -2321,6 +2326,11 @@
                      "except-voice": {
                         
                      }
+                  }
+               },
+               "voice-orientations": {
+                  "voice-orientation": {
+                     
                   }
                },
                "part-symbol": {
