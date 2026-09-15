@@ -94,9 +94,9 @@ test_003_schematron() {
     #
     find -L files \( -name '*.xml' -o -name '*.musicxml' \) -print0 | sort -z | while read -d $'\0' file
     do
+        local basename=$(basename "$file")
+        if [[ -n "$TEST_FILE" && ! "$basename" =~ "$TEST_FILE" ]]; then continue; fi
         while IFS= read -r schema; do
-            local basename=$(basename "$file")
-            if [[ -n "$TEST_FILE" && ! "$basename" =~ "$TEST_FILE" ]]; then continue; fi
             local assert=$(get_assertion "$basename" "$schema")
             if [[ $assert == "skip" ]]; then continue; fi
 

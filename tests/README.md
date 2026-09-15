@@ -62,7 +62,7 @@ $ ./transpile.py validations/validation-name.sch > validations/validation-name.x
 - Add the relevant entries to `assertions.json`
 - Test your validations:
 ```shell
-$ TEST=syntax TEST_FILE=voice-orientation-element ./test.sh
+$ TEST=schematron TEST_FILE=beams-ties ./test.sh
 ```
 - Download the latest Schematron transpiler and update the validations:
 ```shell
