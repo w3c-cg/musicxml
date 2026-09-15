@@ -5154,15 +5154,15 @@ The &lt;multiple-rest&gt; and &lt;measure-repeat&gt; elements indicate the numbe
 				</xs:annotation>
 			</xs:element>
 
-			<xs:element name="voice-orientations" minOccurs="0">
+			<xs:element name="voice-directions" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The &lt;voice-orientations&gt; element contains a number of &lt;voice-orientation&gt; elements which distinguish between upper and lower voices on a staff.</xs:documentation>
+					<xs:documentation>The &lt;voice-directions&gt; element contains a number of &lt;voice-direction&gt; elements which distinguish between upper and lower voices on a staff.</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="voice-orientation" type="voice-orientation" minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="voice-direction" type="voice-direction" minOccurs="0" maxOccurs="unbounded">
 							<xs:annotation>
-								<xs:documentation>The &lt;voice-orientation&gt; element distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each &lt;voice-orientation&gt; element associates an orientation (up/down) with a voice/staff combination. Staff can be omitted for single-staff parts. If no &lt;voice-orientation&gt; element is present for a voice, its orientation is unspecified and application-dependent.</xs:documentation>
+								<xs:documentation>The &lt;voice-direction&gt; element distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each &lt;voice-direction&gt; element associates a stem direction (up/down) with a voice/staff combination. The staff attribute is useful for cross-staff voices where stem direction is different per staff - this value can be omitted for single-staff parts. If no &lt;voice-direction&gt; element is present for a voice, its direction is unspecified and application-dependent.</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 					</xs:sequence>
@@ -5677,9 +5677,9 @@ The print-object attribute allows a time signature to be specified but not print
 		<xs:attributeGroup ref="optional-unique-id"/>
 	</xs:complexType>
 
-	<xs:complexType name="voice-orientation">
+	<xs:complexType name="voice-direction">
 		<xs:annotation>
-			<xs:documentation>The voice-orientation type distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each voice-orientation element associates an orientation (up/down) with a voice/staff combination. Staff can be omitted for single-staff parts. If no voice-orientation element is present for a voice, its orientation is unspecified and application-dependent.</xs:documentation>
+			<xs:documentation>The voice-direction type distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each voice-direction element associates an orientation (up/down) with a voice/staff combination. Staff can be omitted for single-staff parts. If no voice-direction element is present for a voice, its orientation is unspecified and application-dependent.</xs:documentation>
 		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="up-down">

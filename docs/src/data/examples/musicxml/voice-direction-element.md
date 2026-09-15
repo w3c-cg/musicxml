@@ -1,8 +1,8 @@
 ---
-title: '<voice-orientation>'
+title: '<voice-direction>'
 elements:
 - voice
-- voice-orientations
-- voice-orientation
+- voice-directions
+- voice-direction
 description: Voice 3 / staff 1 notes are highlighted in red, while voice 9 / staff 2 notes are highlighted in lilac.
 ---

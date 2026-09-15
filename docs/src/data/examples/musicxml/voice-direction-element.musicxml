@@ -31,13 +31,13 @@
           <line>4</line>
           <clef-octave-change>0</clef-octave-change>
         </clef>
-        <voice-orientations>
-          <voice-orientation voice="3" staff="1">up</voice-orientation>
-          <voice-orientation voice="5" staff="1">down</voice-orientation>
-          <voice-orientation voice="9" staff="1">down</voice-orientation>
-          <voice-orientation voice="9" staff="2">up</voice-orientation>
-          <voice-orientation voice="13" staff="2">down</voice-orientation>
-        </voice-orientations>
+        <voice-directions>
+          <voice-direction voice="3" staff="1">up</voice-direction>
+          <voice-direction voice="5" staff="1">down</voice-direction>
+          <voice-direction voice="9" staff="1">down</voice-direction>
+          <voice-direction voice="9" staff="2">up</voice-direction>
+          <voice-direction voice="13" staff="2">down</voice-direction>
+        </voice-directions>
       </attributes>
       <note>
         <pitch>
@@ -97,7 +97,6 @@
         <duration>8</duration>
         <voice>3</voice>
         <type>half</type>
-        <stem>up</stem>
         <staff>1</staff>
       </note>
       <note>
@@ -109,7 +108,6 @@
         <tie type="start" />
         <voice>3</voice>
         <type>half</type>
-        <stem>up</stem>
         <staff>1</staff>
         <notations>
           <tied type="start" />
@@ -246,7 +244,6 @@
         <tie type="stop" />
         <voice>3</voice>
         <type>quarter</type>
-        <stem>up</stem>
         <staff>1</staff>
         <notations>
           <tied type="stop" />
@@ -261,7 +258,6 @@
         <duration>4</duration>
         <voice>3</voice>
         <type>quarter</type>
-        <stem>up</stem>
         <staff>1</staff>
       </note>
       <note>
@@ -272,7 +268,6 @@
         <duration>4</duration>
         <voice>3</voice>
         <type>quarter</type>
-        <stem>up</stem>
         <staff>1</staff>
       </note>
       <note>
@@ -283,7 +278,6 @@
         <duration>4</duration>
         <voice>3</voice>
         <type>quarter</type>
-        <stem>up</stem>
         <staff>1</staff>
       </note>
       <backup>
@@ -402,7 +396,6 @@
         <duration>8</duration>
         <voice>3</voice>
         <type>half</type>
-        <stem>up</stem>
         <staff>1</staff>
       </note>
       <note>
@@ -413,7 +406,6 @@
         <duration>8</duration>
         <voice>3</voice>
         <type>half</type>
-        <stem>up</stem>
         <staff>1</staff>
       </note>
       <backup>

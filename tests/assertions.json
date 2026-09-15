@@ -36,7 +36,7 @@
   "accidentals.musicxml": {
     "to40.xsl": "pass"
   },
-  "voice-orientation-element.musicxml": {
+  "voice-direction-element.musicxml": {
     "to40.xsl": "pass"
   }
 }

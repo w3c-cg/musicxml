@@ -528,8 +528,8 @@
                      }
                   }
                },
-               "voice-orientations": {
-                  "voice-orientation": {
+               "voice-directions": {
+                  "voice-direction": {
                      
                   }
                },
@@ -2328,8 +2328,8 @@
                      }
                   }
                },
-               "voice-orientations": {
-                  "voice-orientation": {
+               "voice-directions": {
+                  "voice-direction": {
                      
                   }
                },
