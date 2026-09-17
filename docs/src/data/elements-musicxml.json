@@ -5438,7 +5438,7 @@
          }
       ],
       "name": "voice-direction",
-      "documentation": "The <voice-direction> element distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each <voice-direction> element associates a stem direction (up\/down) with a voice\/staff combination. The staff attribute is useful for cross-staff voices where stem direction is different per staff - this value can be omitted for single-staff parts. If no <voice-direction> element is present for a voice, its direction is unspecified and application-dependent."
+      "documentation": "The <voice-direction> element distinguishes between upper and lower voices on a staff. This information is typically used to generate default stem directions when the stems are otherwise unspecified. Each <voice-direction> element associates a stem direction (up\/down) with a voice\/staff combination. The staff attribute is useful for cross-staff voices where stem direction is different per staff - this value can be omitted for single-staff parts. The <note\/stem> value overrides the direction introduced by <voice-direction>. If no <voice-direction> element is present for a voice, its direction is unspecified and application-dependent."
    },
    "measure-numbering": {
       "children": {
