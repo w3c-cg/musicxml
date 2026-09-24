@@ -3966,7 +3966,7 @@
    },
    "time-symbol": {
       "name": "time-symbol",
-      "documentation": "The time-symbol type indicates how to display a time signature. The normal value is the usual fractional display, and is the implied symbol type if none is specified. Other options are the common and cut time symbols, as well as a single number with an implied denominator. The note symbol indicates that the <beat-type> should be represented with the corresponding downstem note rather than a number. The dotted-note symbol indicates that the <beat-type> should be represented with a dotted downstem note that corresponds to three times the <beat-type> value, and a numerator that is one third the <beats> value.",
+      "documentation": "The time-symbol type indicates how to display a time signature. The normal value is the usual fractional display, and is the default value if none is specified. Other options are the common and cut time symbols, as well as \"single-number\" which denotes a numerator-only display with the denominator omitted. The note value indicates that the <beat-type> (denominator) should be represented with the corresponding downstem note rather than a number. The dotted-note value indicates that the denominator should be represented with a dotted downstem note that equals three times the <beat-type> value, and a numerator that equals one-third the <beats> value.",
       "base": [
          "xs:token"
       ],
@@ -3982,7 +3982,7 @@
          },
          {
             "value": "single-number",
-            "documentation": null
+            "documentation": "Better described as \"numerator-only\" where the denominator is omitted."
          },
          {
             "value": "note",
