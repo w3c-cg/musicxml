@@ -1142,16 +1142,12 @@ In start-stop cases, ties can add more elements using a continue type. This is t
 
 	<xs:simpleType name="time-symbol">
 		<xs:annotation>
-			<xs:documentation>The time-symbol type indicates how to display a time signature. The normal value is the usual fractional display, and is the default value if none is specified. Other options are the common and cut time symbols, as well as "single-number" which denotes a numerator-only display with the denominator omitted. The note value indicates that the &lt;beat-type&gt; (denominator) should be represented with the corresponding downstem note rather than a number. The dotted-note value indicates that the denominator should be represented with a dotted downstem note that equals three times the &lt;beat-type&gt; value, and a numerator that equals one-third the &lt;beats&gt; value.</xs:documentation>
+			<xs:documentation>The time-symbol type indicates how to display a time signature. The normal value is the usual fractional display, and is the default value if none is specified. Other options are the common and cut time symbols, as well as single-number which indicates a numerator-only display with the denominator omitted. The note value indicates that the &lt;beat-type&gt; (denominator) should be represented with the corresponding downstem note rather than a number. The dotted-note value indicates that the denominator should be represented with a dotted downstem note that equals three times the &lt;beat-type&gt; value, and a numerator that equals one-third the &lt;beats&gt; value.</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
 			<xs:enumeration value="common"/>
 			<xs:enumeration value="cut"/>
-			<xs:enumeration value="single-number">
-				<xs:annotation>
-					<xs:documentation>Better described as "numerator-only" where the denominator is omitted.</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
+			<xs:enumeration value="single-number"/>
 			<xs:enumeration value="note"/>
 			<xs:enumeration value="dotted-note"/>
 			<xs:enumeration value="normal"/>
@@ -5308,7 +5304,7 @@ The &lt;chromatic&gt; element in a &lt;part-transpose&gt; element will usually h
 		</xs:sequence>
 		<xs:attribute name="symbol" type="time-symbol">
 			<xs:annotation>
-				<xs:documentation>Indicates how to display the second of the dual time signatures, such as using common and cut time symbols or a numerator-only display.</xs:documentation>
+				<xs:documentation>Indicates how to display the second of the dual time signatures, such as by using common and cut time symbols or a single number (numerator-only) display.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="separator" type="time-separator">
@@ -5655,7 +5651,7 @@ The print-object attribute allows a time signature to be specified but not print
 		</xs:attribute>
 		<xs:attribute name="symbol" type="time-symbol">
 			<xs:annotation>
-				<xs:documentation>Indicates how to display a time signature, such as using common and cut time symbols or a numerator-only display.</xs:documentation>
+				<xs:documentation>Indicates how to display a time signature, such as by using common and cut time symbols or a single number (numerator-only) display.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="separator" type="time-separator">
