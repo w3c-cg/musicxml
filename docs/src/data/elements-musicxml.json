@@ -271,7 +271,7 @@
          {
             "required": false,
             "name": "symbol",
-            "documentation": "Indicates how to display the second of the dual time signatures, such as by using common and cut time symbols or a single number display.",
+            "documentation": "Indicates how to display the second of the dual time signatures, such as by using common and cut time symbols or a single number (numerator-only) display.",
             "type": "time-symbol"
          },
          {
@@ -17051,7 +17051,7 @@
          {
             "required": false,
             "name": "symbol",
-            "documentation": "Indicates how to display a time signature, such as by using common and cut time symbols or a single number display.",
+            "documentation": "Indicates how to display a time signature, such as by using common and cut time symbols or a single number (numerator-only) display.",
             "type": "time-symbol"
          },
          {
