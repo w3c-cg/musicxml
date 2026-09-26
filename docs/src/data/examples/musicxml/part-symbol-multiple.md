@@ -1,7 +1,7 @@
 ---
 title: '<part-symbol> (Multiple instances)'
 elements: part-symbol
-description: "Source: Rachmaninoff, S. Prelude in C♯ minor, Op. 3, No. 2"
+description: "Source: Rachmaninoff, S. _Prelude in C♯ minor, Op. 3, No. 2_"
 ---
 ```xml
 <attributes>

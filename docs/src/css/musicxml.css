@@ -8,6 +8,10 @@ span.line:has(.highlighted-word) {
   content: ", ";
 }
 
+article p {
+  max-width: none;
+}
+
 table.musicxml {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;

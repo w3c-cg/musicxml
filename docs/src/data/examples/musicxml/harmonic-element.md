@@ -5,5 +5,5 @@ elements:
 - base-pitch
 - artificial
 - touching-pitch
-description: "Source: Paganini, N. Caprice in E Major. Op. 1, No. 9"
+description: "Source: Paganini, N. _Caprice in E Major. Op. 1, No. 9_"
 ---
