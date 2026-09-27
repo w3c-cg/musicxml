@@ -3288,7 +3288,7 @@
          {
             "required": true,
             "name": "type",
-            "documentation": "If yes, the absence of a particular element with a specified attribute or value is meaningful. It indicates that this information is not present in the score. If no, the absence is not meaningful because the encoding does not include this type of information.",
+            "documentation": "If yes, the absence of a particular element with a specified attribute or value is meaningful. It indicates that this information is not present in the score. If no, the absence is not meaningful because the encoding does not include all instances of this type of information.",
             "type": "yes-no"
          },
          {
@@ -3311,7 +3311,7 @@
          }
       ],
       "name": "supports",
-      "documentation": "The <supports> element indicates if a MusicXML encoding supports a particular MusicXML element. This is recommended for elements like <beam>, <stem>, and <accidental>, where the absence of an element is ambiguous if you do not know if the encoding supports that element. It also allows programs to indicate support for specific attributes, or specific attributes with specific values. This lets applications communicate, for example, that all system and\/or page breaks are contained in the MusicXML file."
+      "documentation": "The <supports> element indicates if a MusicXML encoding supports a particular MusicXML element. This is recommended for elements like <beam>, <stem>, and <accidental>, where the absence of an element would be ambiguous without this signal. It also allows programs to indicate support for specific attributes, or specific attributes with specific values. This lets applications communicate, for example, that all system and\/or page breaks are contained in the MusicXML file.\n\nThe absence of a given element is interpreted differently depending on whether <supports> for this element has type = \"yes\" (the default) or \"no\". If \"yes\", the absence of the element is normative.  If \"no\", the encoding signifies that the status of a missing element is unknown. This could be because the element is not supported at all or because it is only partially supported, leaving the importer to use its own heuristics. In this case, the encoding can still include instances of the element when its presence is unambiguously established."
    },
    "scaling": {
       "children": {
@@ -7981,7 +7981,7 @@
          }
       ],
       "name": "accidental",
-      "documentation": "The accidental type represents actual notated accidentals. Editorial and cautionary indications are indicated by attributes. Values for these attributes are \"no\" if not present. Specific graphic display such as parentheses, brackets, and size are controlled by the level-display attribute group.\n\nIn the case of multiple accidentals per note, accidentals are displayed in the same order they appear in the MusicXML document, i.e. left to right."
+      "documentation": "The <accidental> element represents actual notated accidentals. Editorial and cautionary indications are indicated by attributes. Values for these attributes are \"no\" if not present. Specific graphic display such as parentheses, brackets, and size are controlled by the level-display attribute group.\n\nIn the case of multiple accidentals per note, accidentals are displayed in the same order they appear in the MusicXML document, i.e. left to right.\n\nThe absence of <accidental> is interpreted differently depending on whether <supports element=\"accidental\"> for this element has type = \"yes\" (the default) or \"no\". If \"yes\", the absence of accidental is normative.  If \"no\", the encoding signifies that the status of a missing accidental is unknown. This could be because accidentals are not supported at all or because they are only partially supported, leaving the importer to use its own heuristics. In this case, the encoding can still include instances of <accidental> when its presence is unambiguously established."
    },
    "schleifer": {
       "children": null,
