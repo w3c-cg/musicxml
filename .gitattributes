@@ -1,0 +1,2 @@
+# Ignore generate JSON schema files.
+docs/src/data/*.json linguist-generated=true
