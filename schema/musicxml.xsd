@@ -7558,9 +7558,9 @@ The optional latency attribute specifies a time in milliseconds that the listeni
 			</xs:element>
 			<xs:element name="supports" type="supports">
 				<xs:annotation>
-					<xs:documentation>The &lt;supports&gt; element indicates if a MusicXML encoding supports a particular MusicXML element. This is recommended for elements like &lt;beam&gt;, &lt;stem&gt;, and &lt;accidental&gt;, where the absence of an element would be ambiguous without this signal. It also allows programs to indicate support for specific attributes, or specific attributes with specific values. This lets applications communicate, for example, that all system and/or page breaks are contained in the MusicXML file.
+					<xs:documentation>The &lt;supports&gt; element indicates if a MusicXML encoding supports a particular MusicXML element. This is recommended for elements like &lt;beam&gt;, &lt;stem&gt;, and &lt;accidental&gt;, where the absence of an element would be ambiguous without this signal. It also allows programs to indicate support for specific attributes, or specific attributes with specific values. This lets applications communicate, for example, that all system and/or page breaks are contained in the MusicXML document.
 
-The absence of a given element is interpreted differently depending on whether &lt;supports&gt; for this element has type = "yes" (the default) or "no". If "yes", the absence of the element is normative.  If "no", the encoding signifies that the status of a missing element is unknown. This could be because the element is not supported at all or because it is only partially supported, leaving the importer to use its own heuristics. In this case, the encoding can still include instances of the element when its presence is unambiguously established.</xs:documentation>
+The absence of a given element is interpreted differently depending on whether &lt;supports&gt; for this element has type = "yes" or "no". If "yes", the absence of the element is normative. If "no", the encoding signifies that the status of a missing element is unknown. This could be because the element is not supported at all or because it is only partially supported, leaving the importer to use its own heuristics. In either case, the occurrence of the element in the document overrides any heuristics the importer may be applying.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:choice>
@@ -8936,7 +8936,7 @@ The pizzicato attribute is used when just this note is sounded pizzicato, vs. th
 
 In the case of multiple accidentals per note, accidentals are displayed in the same order they appear in the MusicXML document, i.e. left to right.
 
-The absence of &lt;accidental&gt; is interpreted differently depending on whether &lt;supports element="accidental"&gt; for this element has type = "yes" (the default) or "no". If "yes", the absence of accidental is normative.  If "no", the encoding signifies that the status of a missing accidental is unknown. This could be because accidentals are not supported at all or because they are only partially supported, leaving the importer to use its own heuristics. In this case, the encoding can still include instances of &lt;accidental&gt; when its presence is unambiguously established.</xs:documentation>
+The absence of &lt;accidental&gt; is interpreted differently depending on whether &lt;supports element="accidental"&gt; for this element has type = "yes" or "no". If "yes", the absence of accidental is normative. If "no", the encoding signifies that the status of a missing accidental is unknown. This could be because accidentals are not supported at all or because they are only partially supported, leaving the importer to use its own heuristics. In either case, the occurrence of &lt;accidental&gt; in the document overrides any heuristics the importer may be applying.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="time-modification" type="time-modification" minOccurs="0">
