@@ -1520,9 +1520,7 @@
 	laughing voices. The end-line and end-paragraph elements
 	come from RP-017 for Standard MIDI File Lyric meta-events;
 	they help facilitate lyric display for Karaoke and
-	similar applications. Language names for text elements
-	come from ISO 639, with optional country subcodes from
-	ISO 3166. Justification is center by default; placement is
+	similar applications. Justification is center by default; placement is
 	below by default. Vertical alignment is to the baseline of
 	the text and horizontal alignment matches justification.
 	The print-object attribute can override a note's print-lyric

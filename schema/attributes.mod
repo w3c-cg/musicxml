@@ -532,9 +532,7 @@
 	with attributes for convenience. This is typically used for
 	tempo markings at the beginning of a piece of music. This
 	element was deprecated in Version 2.0 in favor of the
-	direction element's directive attribute. Language names
-	come from ISO 639, with optional country subcodes from
-	ISO 3166.
+	direction element's directive attribute.
 -->
 <!ELEMENT directive (#PCDATA)>
 <!ATTLIST directive
