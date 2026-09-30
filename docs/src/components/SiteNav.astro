@@ -4,8 +4,6 @@ import LinkIcon from '@assets/icons/link-square-01-twotone-rounded.svg';
 import { siteInfo } from '../site.config';
 import { url } from '@/utils';
 
-const reportStatus = `${ siteInfo.isDraft ? 'Draft' : 'Final' } Report`;
-
 let redirect = null;
 if (siteInfo.redirects) {
 	const index = Object.values(siteInfo.redirects).findIndex(redirect => redirect === Astro.url.pathname);
@@ -16,36 +14,31 @@ if (siteInfo.redirects) {
 }
 
 const stable = (redirect ?? Astro.url.pathname).replace(import.meta.env.BASE_URL, 'musicxml40');
+const linkOutTxt = siteInfo.isDev ? 'draft' : 'stable';
+const linkOutHref = siteInfo.isDev ? `https://w3c-cg.github.io${Astro.url.pathname}` : `https://www.w3.org/2021/06/${stable}`;
+const linkOutTarget = siteInfo.isDev ? 'w3c-cg.github.io' : 'w3c.org';
+const reportStatus = `${siteInfo.isDraft ? 'Draft' : 'Final'} Report`;
 ---
 
-<div id="site-nav" class="fixed top-0 h-full px-10 border-r border-neutral-300 flex flex-col bg-olive-100 -translate-x-full xl:translate-x-0 transition-transform duration-400 z-20">
-	<nav class="overflow-y-auto scrollbar-hidden pt-32 pb-24">
+<div id="site-nav" class="fixed top-0 h-full border-r border-neutral-300 flex flex-col bg-olive-100 -translate-x-full xl:translate-x-0 transition-transform duration-400 z-20">
+	<nav class="overflow-y-auto scrollbar-hidden py-28 md:py-32">
 		{
-			siteInfo.isDev ?
+			siteInfo.isDev || siteInfo.isDraft ?
 				<a
 				  class="flex items-center justify-center text-sm absolute w-full top-14 left-0 py-1.5 bg-olive-100/80 backdrop-blur border-b border-neutral-300"
-					href={`https://w3c-cg.github.io${Astro.url.pathname}`}
-					target="w3c-cg.github.io"
+					href={linkOutHref}
+					target={linkOutTarget}
 					>
-					<span>View latest draft version</span>
+					<span>View latest {linkOutTxt} version</span>
 					<LinkIcon class="ml-2 w-4" />
 				</a>
-			: siteInfo.isDraft ?
-				<a
-				  class="flex items-center justify-center text-sm absolute w-full top-14 left-0 py-1.5 bg-olive-100/80 backdrop-blur border-b border-neutral-300"
-					href={`https://www.w3.org/2021/06/${stable}`}
-					target="w3c.org"
-					>
-					<span>View latest stable version</span>
-					<LinkIcon class="ml-2 w-4" />
-				</a>
-			: ''
+				: ''
 		}
-		<a href={url('')} class="flex items-center mb-8 no-underline">
+		<a href={url('')} class="flex items-center px-10 mb-4 md:mb-8 no-underline">
 			<CGLogo class="w-16 h-16" />
-			<p class="font-bold text-base w-24 leading-6">{ reportStatus }</p>
+			<p class="font-bold text-base w-24 leading-6 m-0">{reportStatus}</p>
 		</a>
-		<ul class="list-none m-0 p-0 text-base [&_a]:text-zinc-700 [&_a]:no-underline [&_a]:hover:underline">
+		<ul class="list-none m-0 px-10 text-base [&_a]:text-zinc-700 [&_a]:no-underline [&_a]:hover:underline">
 			<li class="font-bold"><a href={url('')}>Introduction</a></li>
 			<li class="font-bold"><a href={url('tutorial/introduction/')}>Tutorial</a></li>
 			<ul class="list-none text-base">
@@ -121,29 +114,32 @@ const stable = (redirect ?? Astro.url.pathname).replace(import.meta.env.BASE_URL
 	const siteNav = document.getElementById('site-nav')!;
 
 	// Initial opened state is true for desktop, false for mobile.
-	let navIsOpen = window.matchMedia('(width >= 80rem)').matches;
+	let isMobile = window.matchMedia('(width <= 80rem)').matches;
+	console.log(isMobile);
+	let isNavOpen = !isMobile;
 
 	// Initialise the aria-expanded state.
-	menuBtn.setAttribute('aria-expanded', navIsOpen ? 'true' : 'false');
+	menuBtn.setAttribute('aria-expanded', isNavOpen ? 'true' : 'false');
 
 	function handleMenu() {
-
 		// Remove these Tailwind classes if they exist.
 		if (siteNav.classList.contains('-translate-x-full')) {
 			siteNav.classList.remove('-translate-x-full',  'lg:translate-x-0');
 		}
 
-		// Toggle visibility and aria-expanded state.
-		if (navIsOpen) {
+		// Toggle transforms, aria-expanded state and body scroll on mobile.
+		if (isNavOpen) {
 			siteNav.style.transform = 'translateX(-100%)';
 			menuBtn.setAttribute('aria-expanded', 'false');
+			if (isMobile) document.body.style.overflow = 'initial';
 		} else {
 			siteNav.style.transform = 'translateX(0)';
 			menuBtn.setAttribute('aria-expanded', 'true');
+			if (isMobile) document.body.style.overflow = 'hidden';
 		}
 
 		// Update state.
-		navIsOpen = !navIsOpen;
+		isNavOpen = !isNavOpen;
 	}
 
 	// Ensure event is also keyboard accessible.
