@@ -7367,6 +7367,11 @@ Deprecated as of Version 2.0. The &lt;elevation&gt; element in the &lt;midi-inst
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
+		<xs:attribute name="smufl" type="smufl-pictogram-glyph-name">
+			<xs:annotation>
+				<xs:documentation>Distinguishes different SMuFL stylistic alternates. Overrides the pictogram determined by &lt;stick-type&gt; and &lt;stick-material&gt;.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 		<xs:attribute name="tip" type="tip-direction">
 			<xs:annotation>
 				<xs:documentation>Represents the direction in which the tip of a stick or beater points, using Unicode arrow terminology.</xs:documentation>

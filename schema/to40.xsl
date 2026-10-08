@@ -57,6 +57,9 @@
   <xsl:template
     match="harmonic/@number"/>
 
+  <xsl:template
+    match="harmonic/@smufl"/>
+
   <!-- Remove new/modified elements. -->
   <xsl:template
     match="part-symbol[preceding-sibling::part-symbol]"/>

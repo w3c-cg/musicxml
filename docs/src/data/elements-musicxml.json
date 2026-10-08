@@ -15608,6 +15608,12 @@
       "attributes": [
          {
             "required": false,
+            "name": "smufl",
+            "documentation": "Distinguishes different SMuFL stylistic alternates. Overrides the pictogram determined by <stick-type> and <stick-material>.",
+            "type": "smufl-pictogram-glyph-name"
+         },
+         {
+            "required": false,
             "name": "tip",
             "documentation": "Represents the direction in which the tip of a stick or beater points, using Unicode arrow terminology.",
             "type": "tip-direction"
