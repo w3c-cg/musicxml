@@ -57,8 +57,10 @@
   <xsl:template
     match="harmonic/@number"/>
 
+  <!-- Remove new values. -->
   <xsl:template
-    match="harmonic/@smufl"/>
+    match="beater[. = 'soft xylophone beaters' or
+      . = 'brass mallets']"/>
 
   <!-- Remove new/modified elements. -->
   <xsl:template
