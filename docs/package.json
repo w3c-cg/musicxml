@@ -22,7 +22,7 @@
     "astro": "^7.2.4",
     "astro-pagefind": "^2.0.1",
     "astro-tooltips": "^0.6.2",
-    "tailwindcss": "^4.3.0",
+    "tailwindcss": "^4.3.4",
     "vite-plugin-restart": "^2.0.0",
     "xslt3": "^2.7.0"
   },
