@@ -5070,9 +5070,11 @@ The type attribute indicates whether the editorial information applies to the st
 
 			<xs:element name="divisions" type="positive-divisions" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Musical notation duration is commonly represented as fractions. The &lt;divisions&gt; element indicates how many divisions per quarter note are used to indicate a note&apos;s duration. For example, if duration = 1 and divisions = 2, this is an eighth note duration. Duration and divisions are used directly for generating sound output, so they must be chosen to take tuplets into account.
+					<xs:documentation>Musical notation duration is commonly represented as fractions. The &lt;divisions&gt; element indicates how many divisions per quarter note are used to indicate a note&apos;s duration. For example, if &lt;duration&gt; = 1 and &lt;divisions&gt; = 2, this is an eighth note duration. Duration and divisions are used directly for generating sound output, so they must be chosen to take tuplets into account.
 
-Using a &lt;divisions&gt; element lets us use just one number to represent a duration for each note in the score, while retaining the full power of a fractional representation. If maximum compatibility with Standard MIDI 1.0 files is important, do not have the divisions value exceed 16383.</xs:documentation>
+Using a &lt;divisions&gt; element lets us use just one number to represent a duration for each note in the score, while retaining the full power of a fractional representation. If maximum compatibility with Standard MIDI 1.0 files is important, do not have the divisions value exceed 16383.
+
+Although this element is optional in the schema, it has to be declared before the occurrence of any note&apos;s &lt;duration&gt; to allow the application to calculate actual note durations. Otherwise, the behavior of the application will be undefined.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 

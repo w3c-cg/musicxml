@@ -38,5 +38,11 @@
   },
   "voice-direction-element.musicxml": {
     "to40.xsl": "pass"
+  },
+  "01a-Pitches-Pitches.musicxml": {
+    "note-measure-durations.sch": "pass"
+  },
+  "note-measure-durations.invalid.musicxml": {
+    "note-measure-durations.sch": "fail"
   }
 }

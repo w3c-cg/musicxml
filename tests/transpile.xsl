@@ -714,7 +714,9 @@ SOFTWARE.
               <alias:attribute name="document" select="{$schxslt:document-uri-expression}"/>
             </alias:if>
           </element>
-          <alias:next-match/>
+          <alias:next-match>
+            <alias:with-param name="Q{{http://dmaus.name/ns/2023/schxslt}}pattern" as="Q{{http://www.w3.org/2001/XMLSchema}}string*" select="$Q{{http://dmaus.name/ns/2023/schxslt}}pattern"/>
+          </alias:next-match>
         </alias:when>
         <alias:otherwise>
           <call-template name="schxslt:fired-rule"/>
@@ -872,16 +874,12 @@ SOFTWARE.
     </copy>
   </template>
 
-  <template match="sch:name[@path]" as="element(Q{http://www.w3.org/1999/XSL/Transform}for-each)" mode="schxslt:copy-message-content">
-    <param name="assertion" as="element()" tunnel="yes"/>
-    <alias:for-each select="{($assertion/@subject, $assertion/../@subject, '.')[1]}[1]">
-      <alias:value-of select="{@path}"/>
-    </alias:for-each>
+  <template match="sch:name[@path]" as="element(Q{http://www.w3.org/1999/XSL/Transform}value-of)" mode="schxslt:copy-message-content">
+    <alias:value-of select="{@path}"/>
   </template>
 
   <template match="sch:name[not(@path)]" as="element(Q{http://www.w3.org/1999/XSL/Transform}value-of)" mode="schxslt:copy-message-content">
-    <param name="assertion" as="element()" tunnel="yes"/>
-    <alias:value-of select="name({($assertion/@subject, $assertion/../@subject, '.')[1]})"/>
+    <alias:value-of select="name(.)"/>
   </template>
 
   <template match="sch:value-of" as="element(Q{http://www.w3.org/1999/XSL/Transform}for-each)" mode="schxslt:copy-message-content">

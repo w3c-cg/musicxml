@@ -6,10 +6,15 @@ Exit code 0 if no failed assertions, exit code 1 if there are failed assertions.
 
 import sys
 import argparse
+import os
 from saxonche import PySaxonProcessor
 
 # Don't print stack trace with exception.
 sys.tracebacklimit = 0
+
+# Use the bundled XML catalog to resolve DTDs.
+CATALOG_FILE = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', 'schema', 'catalog.xml'))
 
 def validate_xml(xml_file: str, xsl_file: str) -> dict:
     """
@@ -24,6 +29,9 @@ def validate_xml(xml_file: str, xsl_file: str) -> dict:
     """
     # Initialize Saxon processor
     with PySaxonProcessor(license=False) as proc:
+        # Load the XML catalog
+        proc.set_catalog(CATALOG_FILE)
+
         # Compile the Schematron XSLT
         xslt_executable = proc.new_xslt30_processor()
         executable = xslt_executable.compile_stylesheet(stylesheet_file=xsl_file)
