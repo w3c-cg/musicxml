@@ -18,7 +18,7 @@
   "dependencies": {
     "@astrojs/markdown-remark": "^7.2.4",
     "@selemondev/shiki-transformer-copy-button": "^1.1.0",
-    "@tailwindcss/vite": "^4.3.0",
+    "@tailwindcss/vite": "^4.3.5",
     "astro": "^7.2.4",
     "astro-pagefind": "^2.0.1",
     "astro-tooltips": "^0.6.2",
