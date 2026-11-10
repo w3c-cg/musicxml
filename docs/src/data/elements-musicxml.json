@@ -10939,7 +10939,7 @@
          "attributes"
       ],
       "name": "divisions",
-      "documentation": "Musical notation duration is commonly represented as fractions. The <divisions> element indicates how many divisions per quarter note are used to indicate a note's duration. For example, if duration = 1 and divisions = 2, this is an eighth note duration. Duration and divisions are used directly for generating sound output, so they must be chosen to take tuplets into account.\n\nUsing a <divisions> element lets us use just one number to represent a duration for each note in the score, while retaining the full power of a fractional representation. If maximum compatibility with Standard MIDI 1.0 files is important, do not have the divisions value exceed 16383."
+      "documentation": "Musical notation duration is commonly represented as fractions. The <divisions> element indicates how many divisions per quarter note are used to indicate a note's duration. For example, if <duration> = 1 and <divisions> = 2, this is an eighth note duration. Duration and divisions are used directly for generating sound output, so they must be chosen to take tuplets into account.\n\nUsing a <divisions> element lets us use just one number to represent a duration for each note in the score, while retaining the full power of a fractional representation. If maximum compatibility with Standard MIDI 1.0 files is important, do not have the divisions value exceed 16383.\n\nAlthough this element is optional in the schema, it has to be declared before the occurrence of any note's <duration> to allow the application to calculate actual note durations. Otherwise, the behavior of the application will be undefined."
    },
    "work-title": {
       "children": {
