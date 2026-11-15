@@ -2455,7 +2455,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -2644,7 +2644,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -3890,7 +3890,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -4700,7 +4700,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          }
       ],
@@ -4844,7 +4844,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -6221,7 +6221,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -6729,7 +6729,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -6873,7 +6873,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -6999,7 +6999,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -7214,7 +7214,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -7539,7 +7539,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          }
       ],
@@ -9573,7 +9573,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -10355,7 +10355,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          }
       ],
@@ -10390,7 +10390,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          }
       ],
@@ -11408,7 +11408,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -11502,7 +11502,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -12125,7 +12125,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -13374,7 +13374,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          }
       ],
@@ -13610,7 +13610,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -13857,7 +13857,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          }
       ],
@@ -14277,7 +14277,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -17129,7 +17129,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -18057,7 +18057,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -18512,7 +18512,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -19606,7 +19606,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -20380,7 +20380,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          }
       ],
@@ -21645,7 +21645,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
@@ -21974,7 +21974,7 @@
          {
             "required": false,
             "name": "print-object",
-            "documentation": "Specifies whether or not to print an object. It is yes if not specified.",
+            "documentation": "Specifies whether or not to print an object. It is yes if not specified.\n\nOther attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.",
             "type": "yes-no"
          },
          {
