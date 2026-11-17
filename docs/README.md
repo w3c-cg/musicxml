@@ -59,6 +59,7 @@ elements:
 - to-be
 - highlighted
 description: Narrative describing the example.
+musicxml: docs/relative/path/to/example.musicxml
 ---
 '''xml
 <score-partwise version="4.1"
@@ -70,7 +71,9 @@ description: Narrative describing the example.
 [..]
 '''
 ```
-MusicXML examples can also be stored in the same folder `docs/src/data/examples/[schema]` with extension `.musicxml`. The MusicXML file overrides the above `xml` snippet when its filename matches the example Markdown. Similarly, illustrative images are found in `docs/src/assets/img/examples/[schema]`. An image is included in an example when their filenames match.
+If present in the Markdown front matter, the `musicxml` path (relative to `docs` folder) is used to find the MusicXML example file. The MusicXML example file can also be stored in the same folder `docs/src/data/examples/[schema]` with extension `.musicxml` and with its filename matching the Markdown filename. If none of those options are found, the `'''xml` snippet is expected in the Markdown example.
+
+Illustrative images are found in `docs/src/assets/img/examples/[schema]`. An image is included in an example when their filenames match.
 
 ## Development
 - To build the full site: `npm i && npm run build`
