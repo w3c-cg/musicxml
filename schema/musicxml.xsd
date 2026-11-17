@@ -3920,7 +3920,9 @@ This attribute provides higher-resolution positioning data than the placement at
 		</xs:annotation>
 		<xs:attribute name="print-object" type="yes-no">
 			<xs:annotation>
-				<xs:documentation>Specifies whether or not to print an object. It is yes if not specified.</xs:documentation>
+				<xs:documentation>Specifies whether or not to print an object. It is yes if not specified.
+
+Other attributes such as print-dot, print-leger, print-lyric, can be used to override the printing of the object's corresponding details. In addition, print-XXXX attributes act hierarchically, where lower-level declarations override higher-level ones in the document structure.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:attributeGroup>
