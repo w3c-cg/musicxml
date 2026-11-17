@@ -11,7 +11,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/img/**/
 const { example, schema } = Astro.props;
 const name = example.id;
 const musicxml = `./src/data/examples/${schema}/${name}.musicxml`;
-const snippet = fs.existsSync(musicxml) ? fs.readFileSync(musicxml, 'utf8').trim() : example.body?.replace(/```xml|```/g, '').trim();
+const snippet = fs.existsSync(musicxml) ? fs.readFileSync(musicxml, 'utf8').trim() : example.body.replace(/```xml|```/g, '').trim();
 const image = `/src/assets/img/${example.data.tutorial ? 'tutorial' : ('examples/' + schema)}/${name}.png`;
 ---
 {image in images && (
