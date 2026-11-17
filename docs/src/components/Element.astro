@@ -36,7 +36,7 @@ const examples_ = Object.values(examples).filter(example => {
   if (regex.test(example.rawContent())) return true;
   if (example.frontmatter.elements_map && Object.values(example.frontmatter.elements_map).includes(element.id)) return true;
   if (!example.frontmatter.elements_map && regex_?.test(example.rawContent())) return true;
-  const musicxml = example.file.replace('.md', '.musicxml');
+  const musicxml = example.frontmatter.musicxml ?? example.file.replace('.md', '.musicxml');
   if (fs.existsSync(musicxml)) {
     const snippet = fs.readFileSync(musicxml, 'utf8').trim();
     if (regex.test(snippet)) return true;
