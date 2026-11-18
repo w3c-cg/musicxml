@@ -57,6 +57,9 @@
   <xsl:template
     match="harmonic/@number"/>
 
+  <xsl:template
+    match="bar-style/@default-y | bar-style/@length"/>
+
   <!-- Remove new values. -->
   <xsl:template
     match="beater[. = 'soft xylophone beaters' or
@@ -74,6 +77,9 @@
 
   <xsl:template
     match="voice-directions | voice-direction"/>
+
+  <xsl:template
+    match="bar-style-appearance | bar-style-default-y | bar-style-length"/>
 
   <!--
     Convert score version attribute to 4.0.

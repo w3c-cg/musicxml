@@ -7720,9 +7720,9 @@ The absence of a given element is interpreted differently depending on whether &
 The SMuFL canonical glyph name should match the type. For instance, a type of quarter-rest would use values restQuarter, restQuarterOld, or restQuarterZ. A type of g-clef-ottava-bassa would use values gClef8vb, gClef8vbOld, or gClef8vbCClef. A type of octave-shift-up-8 would use values ottava, ottavaBassa, ottavaBassaBa, ottavaBassaVb, or octaveBassa.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="bar-style-position" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="bar-style-appearance" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>The &lt;bar-style-position&gt; element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Negative y is up, positive y is down. All units are in tenths of interline space.
+					<xs:documentation>The &lt;bar-style-appearance&gt; element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Negative y is up, positive y is down. All units are in tenths of interline space.
 
 For tick barlines, the defaults are default-y = -5, length = 10. For short barlines, the defaults are default-y = 10, length = 20. For other barlines, the defaults are default-y = 0, length = 10 * number of staff lines.</xs:documentation>
 				</xs:annotation>

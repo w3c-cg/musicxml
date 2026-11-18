@@ -1090,40 +1090,6 @@
       "name": "millimeters",
       "documentation": "The <millimeters> element contains the number of millimeters that correspond to the given number of tenths within the <scaling> element formula."
    },
-   "bar-style-position": {
-      "children": {
-         "type": "sequence",
-         "value": [
-            {
-               "type": "element",
-               "value": "bar-style-default-y",
-               "min": "0",
-               "max": "1"
-            },
-            {
-               "type": "element",
-               "value": "bar-style-length",
-               "min": "0",
-               "max": "1"
-            }
-         ],
-         "min": "1",
-         "max": "1"
-      },
-      "parents": [
-         "appearance"
-      ],
-      "attributes": [
-         {
-            "required": true,
-            "name": "type",
-            "documentation": "The barline type for which defaults are being set.",
-            "type": "bar-style"
-         }
-      ],
-      "name": "bar-style-position",
-      "documentation": "The <bar-style-position> element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Negative y is up, positive y is down. All units are in tenths of interline space.\n\nFor tick barlines, the defaults are default-y = -5, length = 10. For short barlines, the defaults are default-y = 10, length = 20. For other barlines, the defaults are default-y = 0, length = 10 * number of staff lines."
-   },
    "line-width": {
       "children": {
          "type": "type",
@@ -7315,6 +7281,40 @@
       "name": "root-alter",
       "documentation": "The <root-alter> element represents the chromatic alteration of the root of the current chord within the <harmony> element. In some chord styles, the text for the <root-step> element may include <root-alter> information. In that case, the print-object attribute of the <root-alter> element can be set to no."
    },
+   "bar-style-appearance": {
+      "children": {
+         "type": "sequence",
+         "value": [
+            {
+               "type": "element",
+               "value": "bar-style-default-y",
+               "min": "0",
+               "max": "1"
+            },
+            {
+               "type": "element",
+               "value": "bar-style-length",
+               "min": "0",
+               "max": "1"
+            }
+         ],
+         "min": "1",
+         "max": "1"
+      },
+      "parents": [
+         "appearance"
+      ],
+      "attributes": [
+         {
+            "required": true,
+            "name": "type",
+            "documentation": "The barline type for which defaults are being set.",
+            "type": "bar-style"
+         }
+      ],
+      "name": "bar-style-appearance",
+      "documentation": "The <bar-style-appearance> element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Negative y is up, positive y is down. All units are in tenths of interline space.\n\nFor tick barlines, the defaults are default-y = -5, length = 10. For short barlines, the defaults are default-y = 10, length = 20. For other barlines, the defaults are default-y = 0, length = 10 * number of staff lines."
+   },
    "hole-closed": {
       "children": {
          "type": "type",
@@ -8288,7 +8288,7 @@
             },
             {
                "type": "element",
-               "value": "bar-style-position",
+               "value": "bar-style-appearance",
                "min": "0",
                "max": "unbounded"
             },
@@ -9717,7 +9717,7 @@
          "value": "tenths"
       },
       "parents": [
-         "bar-style-position"
+         "bar-style-appearance"
       ],
       "name": "bar-style-default-y",
       "documentation": "Refers to the top position of the barline, relative to the first (top) staff line. Negative y is up, positive y is down. All units are in tenths of interline space."
@@ -12026,7 +12026,7 @@
          "value": "non-negative-tenths"
       },
       "parents": [
-         "bar-style-position"
+         "bar-style-appearance"
       ],
       "name": "bar-style-length",
       "documentation": "Refers to the length of the barline, which extends downward from the default-y position."
