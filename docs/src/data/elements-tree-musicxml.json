@@ -55,6 +55,14 @@
             "distance": {
                
             },
+            "bar-style-position": {
+               "bar-style-default-y": {
+                  
+               },
+               "bar-style-length": {
+                  
+               }
+            },
             "note-size": {
                
             },
@@ -1854,6 +1862,14 @@
             },
             "distance": {
                
+            },
+            "bar-style-position": {
+               "bar-style-default-y": {
+                  
+               },
+               "bar-style-length": {
+                  
+               }
             },
             "note-size": {
                
