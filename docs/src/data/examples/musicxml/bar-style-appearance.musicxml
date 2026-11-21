@@ -5,7 +5,12 @@
   <defaults>
     <appearance>
       <bar-style-appearance type="tick">
-        <bar-style-default-y>5</bar-style-default-y>
+        <bar-style-default-y>10</bar-style-default-y>
+        <bar-style-length>20</bar-style-length>
+      </bar-style-appearance>
+      <bar-style-appearance type="short">
+        <bar-style-default-y>-5</bar-style-default-y>
+        <bar-style-length>30</bar-style-length>
       </bar-style-appearance>
     </appearance>
   </defaults>
@@ -35,84 +40,60 @@
           <step>C</step>
           <octave>4</octave>
         </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
+        <duration>4</duration>
+        <type>whole</type>
       </note>
-      <barline location="middle">
+      <barline location="right">
         <bar-style>tick</bar-style>
       </barline>
-      <note>
-        <pitch>
-          <step>C</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
-      </note>
-      <barline location="middle">
-        <bar-style>tick</bar-style>
-      </barline>
-      <note>
-        <pitch>
-          <step>C</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
-      </note>
-      <barline location="middle">
-        <bar-style>tick</bar-style>
-      </barline>
-      <note>
-        <pitch>
-          <step>C</step>
-          <octave>4</octave>
-        </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
-      </note>
     </measure>
     <measure number="2">
       <note>
         <pitch>
-          <step>C</step>
+          <step>D</step>
           <octave>4</octave>
         </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
+        <duration>4</duration>
+        <type>whole</type>
       </note>
-      <barline location="middle">
-        <bar-style default-y="-5" length="20">tick</bar-style>
+      <barline location="right">
+        <bar-style>short</bar-style>
       </barline>
+    </measure>
+    <measure number="3">
       <note>
         <pitch>
-          <step>C</step>
+          <step>E</step>
           <octave>4</octave>
         </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
+        <duration>4</duration>
+        <type>whole</type>
       </note>
-      <barline location="middle">
-        <bar-style default-y="-5" length="20">tick</bar-style>
+      <barline location="right">
+        <bar-style default-y="-5" length="10">tick</bar-style>
       </barline>
+    </measure>
+    <measure number="4">
       <note>
         <pitch>
-          <step>C</step>
+          <step>F</step>
           <octave>4</octave>
         </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
+        <duration>4</duration>
+        <type>whole</type>
       </note>
-      <barline location="middle">
-        <bar-style default-y="-5" length="20">tick</bar-style>
+      <barline location="right">
+        <bar-style default-y="-20" length="20">short</bar-style>
       </barline>
+    </measure>
+    <measure number="5">
       <note>
         <pitch>
-          <step>C</step>
+          <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>1</duration>
-        <type>quarter</type>
+        <duration>4</duration>
+        <type>whole</type>
       </note>
     </measure>
   </part>

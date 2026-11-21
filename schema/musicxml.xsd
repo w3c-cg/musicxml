@@ -5731,7 +5731,7 @@ The print-object attribute allows a time signature to be specified but not print
 				<xs:attributeGroup ref="color"/>
 				<xs:attribute name="default-y" type="tenths">
 					<xs:annotation>
-						<xs:documentation>Refers to the top position of the barline, relative to the first (top) staff line. Negative y is up, positive y is down. All units are in tenths of interline space.</xs:documentation>
+						<xs:documentation>Refers to the top position of the barline, relative to the first (top) staff line. Positive y is up, negative y is down. All units are in tenths of interline space.</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 				<xs:attribute name="length" type="non-negative-tenths">
@@ -7722,9 +7722,9 @@ The SMuFL canonical glyph name should match the type. For instance, a type of qu
 			</xs:element>
 			<xs:element name="bar-style-appearance" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>The &lt;bar-style-appearance&gt; element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Negative y is up, positive y is down. All units are in tenths of interline space.
+					<xs:documentation>The &lt;bar-style-appearance&gt; element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Positive y is up, negative y is down. All units are in tenths of interline space.
 
-For tick barlines, the defaults are default-y = -5, length = 10. For short barlines, the defaults are default-y = 10, length = 20. For other barlines, the defaults are default-y = 0, length = 10 * number of staff lines.</xs:documentation>
+For tick barlines, the defaults are default-y = 5, length = 10. For short barlines, the defaults are default-y = -10, length = 20. For other barlines, the defaults are default-y = 0, length = 10 * number of staff lines.</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>

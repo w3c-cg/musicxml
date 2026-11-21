@@ -5,5 +5,5 @@ elements:
 - bar-style-appearance
 - bar-style-default-y
 - bar-style-length
-description: This example demonstrates the ability to set the default vertical position of a specific barline type as well as its length. These attributes can also be overridden for specific barline instances.
+description: This example demonstrates setting the default attributes for both tick and short barlines, as shown in measures 1 and 2. In measure 3, the tick barline is overridden and in measure 4, the short barline is overridden.
 ---

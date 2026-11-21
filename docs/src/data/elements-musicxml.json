@@ -7313,7 +7313,7 @@
          }
       ],
       "name": "bar-style-appearance",
-      "documentation": "The <bar-style-appearance> element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Negative y is up, positive y is down. All units are in tenths of interline space.\n\nFor tick barlines, the defaults are default-y = -5, length = 10. For short barlines, the defaults are default-y = 10, length = 20. For other barlines, the defaults are default-y = 0, length = 10 * number of staff lines."
+      "documentation": "The <bar-style-appearance> element is used to override the default-y position and length of a specific type of barline. The default-y position is measured relative to the first (top) staff line, the length extends downward. Positive y is up, negative y is down. All units are in tenths of interline space.\n\nFor tick barlines, the defaults are default-y = 5, length = 10. For short barlines, the defaults are default-y = -10, length = 20. For other barlines, the defaults are default-y = 0, length = 10 * number of staff lines."
    },
    "hole-closed": {
       "children": {
@@ -9698,7 +9698,7 @@
          {
             "required": false,
             "name": "default-y",
-            "documentation": "Refers to the top position of the barline, relative to the first (top) staff line. Negative y is up, positive y is down. All units are in tenths of interline space.",
+            "documentation": "Refers to the top position of the barline, relative to the first (top) staff line. Positive y is up, negative y is down. All units are in tenths of interline space.",
             "type": "tenths"
          },
          {
