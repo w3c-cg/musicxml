@@ -44,5 +44,8 @@
   },
   "note-measure-durations.invalid.musicxml": {
     "note-measure-durations.sch": "fail"
+  },
+  "bar-style-appearance.musicxml": {
+    "to40.xsl": "pass"
   }
 }

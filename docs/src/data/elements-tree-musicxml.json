@@ -61,6 +61,14 @@
             "other-appearance": {
                
             },
+            "bar-style-appearance": {
+               "bar-style-default-y": {
+                  
+               },
+               "bar-style-length": {
+                  
+               }
+            },
             "glyph": {
                
             }
@@ -1860,6 +1868,14 @@
             },
             "other-appearance": {
                
+            },
+            "bar-style-appearance": {
+               "bar-style-default-y": {
+                  
+               },
+               "bar-style-length": {
+                  
+               }
             },
             "glyph": {
                

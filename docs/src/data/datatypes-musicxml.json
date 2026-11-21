@@ -3233,6 +3233,17 @@
          "minInclusive": "0"
       }
    },
+   "non-negative-tenths": {
+      "name": "non-negative-tenths",
+      "documentation": "The non-negative-tenths type specifies a non-negative tenths value.",
+      "base": [
+         "tenths"
+      ],
+      "type": "range",
+      "value": {
+         "minInclusive": "0"
+      }
+   },
    "yyyy-mm-dd": {
       "name": "yyyy-mm-dd",
       "documentation": "Calendar dates are represented yyyy-mm-dd format, following [ISO 8601](https:\/\/www.iso.org\/iso-8601-date-and-time-format.html). This is a W3C XML Schema date type, but without the optional timezone data.",
