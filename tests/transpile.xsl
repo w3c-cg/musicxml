@@ -690,7 +690,11 @@ SOFTWARE.
 
     <alias:template match="{@context}" mode="{$group}" priority="{last() - position()}">
       <alias:param name="Q{{http://dmaus.name/ns/2023/schxslt}}pattern" as="Q{{http://www.w3.org/2001/XMLSchema}}string*" select="()"/>
-      <alias:variable name="Q{{http://dmaus.name/ns/2023/schxslt}}rule-context" as="node()" select="."/>
+      <element name="variable" namespace="http://www.w3.org/1999/XSL/Transform" use-when="not($schxslt:streamable)">
+        <attribute name="name">Q{{http://dmaus.name/ns/2023/schxslt}}rule-context</attribute>
+        <attribute name="as">node()</attribute>
+        <attribute name="select">.</attribute>
+      </element>
       <call-template name="schxslt:fired-rule"/>
       <alias:next-match>
         <alias:with-param name="Q{{http://dmaus.name/ns/2023/schxslt}}pattern" as="Q{{http://www.w3.org/2001/XMLSchema}}string*" select="$Q{{http://dmaus.name/ns/2023/schxslt}}pattern"/>
@@ -703,7 +707,11 @@ SOFTWARE.
 
     <alias:template match="{@context}" mode="{$group}" priority="{last() - position()}">
       <alias:param name="Q{{http://dmaus.name/ns/2023/schxslt}}pattern" as="Q{{http://www.w3.org/2001/XMLSchema}}string*" select="()"/>
-      <alias:variable name="Q{{http://dmaus.name/ns/2023/schxslt}}rule-context" as="node()" select="."/>
+      <element name="variable" namespace="http://www.w3.org/1999/XSL/Transform" use-when="not($schxslt:streamable)">
+        <attribute name="name">Q{{http://dmaus.name/ns/2023/schxslt}}rule-context</attribute>
+        <attribute name="as">node()</attribute>
+        <attribute name="select">.</attribute>
+      </element>
       <alias:choose>
         <alias:when test="'{generate-id(..)}' = $Q{{http://dmaus.name/ns/2023/schxslt}}pattern">
           <element name="svrl:suppressed-rule" use-when="$schxslt:report-suppressed-rule and not($schxslt:compact-report)">
@@ -1008,7 +1016,7 @@ SOFTWARE.
     <if test="schxslt:in-scope-language(.) ne schxslt:in-scope-language(ancestor::sch:schema)">
       <attribute name="xml:lang" select="schxslt:in-scope-language(.)"/>
     </if>
-    <if test="not($schxslt:streamable) or exists($schxslt:location-function)">
+    <if test="not($schxslt:streamable)">
       <alias:where-populated>
         <!-- The variable schxslt:rule-context will be available at this part of the validation stylesheet. -->
         <alias:attribute name="location" select="{($schxslt:location-function, 'path')[1]}({($assertion/@subject, $assertion/../@subject, '$Q{http://dmaus.name/ns/2023/schxslt}rule-context')[1]})"/>

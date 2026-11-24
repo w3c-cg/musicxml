@@ -47,5 +47,11 @@
   },
   "bar-style-appearance.musicxml": {
     "to40.xsl": "pass"
+  },
+  "notehead-parentheses.musicxml": {
+    "note-attributes.sch": "pass"
+  },
+  "22d-Parenthesized-Noteheads.musicxml": {
+    "note-attributes.sch": "fail"
   }
 }
