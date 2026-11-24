@@ -9138,7 +9138,7 @@ If the parentheses attribute is set to yes, the notehead is parenthesized. It is
 				</xs:attribute>
 				<xs:attribute name="parentheses" type="yes-no">
 					<xs:annotation>
-						<xs:documentation>If yes, the notehead is parenthesized. It is no if not specified.</xs:documentation>
+						<xs:documentation>If yes, the notehead is parenthesized. It is no if not specified. The parentheses here enclose the notehead including any accidentals and/or augmentation dots displayed for the note. Parentheses or brackets that apply to the accidental alone are specified with the parentheses and bracket attributes of the &lt;accidental&gt; element.</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 				<xs:attributeGroup ref="font"/>
