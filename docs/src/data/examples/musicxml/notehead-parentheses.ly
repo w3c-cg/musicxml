@@ -2,13 +2,6 @@
 % convert to png using: lilypond --png -dresolution=300 -dpixmap-format=pngalpha /path/to/musicxml/docs/src/data/examples/musicxml/notehead-parentheses.ly
 \pointAndClickOff
 
-\header {
-  texidoc = "Parenthesized note heads. A normal parenthesized note, a
-    parenthesized note with an ‘x’ note head, a three-note chord with the middle
-    note parenthesized, a three-note chord with all notes parenthesized, a
-    normal quarter rest in parentheses, and a pitched quarter rest in
-    parentheses."
-}
 \layout {
   \context {
     \Staff
