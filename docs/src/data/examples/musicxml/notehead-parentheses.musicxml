@@ -114,7 +114,9 @@
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <notehead parentheses="yes">normal</notehead>
+        <notations>
+          <level parentheses="yes"/>
+        </notations>
       </note>
       <note>
         <rest>
@@ -124,7 +126,9 @@
         <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
-        <notehead parentheses="yes">normal</notehead>
+        <notations>
+          <level parentheses="yes"/>
+        </notations>
       </note>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
